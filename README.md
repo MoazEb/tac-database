@@ -1,6 +1,6 @@
 # TAC Database
 
-> Complete TAC (Type Allocation Code) database for mobile devices up to December 2025. Useful for IMEI lookup, device fingerprinting, and telecom applications.
+> Complete TAC (Type Allocation Code) database for mobile devices up to October 2026. Useful for IMEI lookup, device fingerprinting, and telecom applications.
 
 ---
 
@@ -19,10 +19,17 @@ A **Type Allocation Code (TAC)** is the first 8 digits of an IMEI number. It uni
 
 ```
 tac-database/
+├── tac_full.csv
 ├── tac_full.xlsx
 ├── LICENSE
 └── README.md
 ```
+
+`tac_full.xlsx` contains three sheets:
+
+- `ALL` — the complete dataset (matches `tac_full.csv`)
+- `Common` — curated subset of widely used devices
+- `Not_Common` — less common, regional, and legacy devices
 
 ---
 
@@ -38,18 +45,23 @@ tac-database/
 
 ## Usage
 
-### CSV Lookup (manual)
+### CSV
 
-Open `tac_full.xlsx` and search for a TAC number or device model directly.
+`tac_full.csv` is a plain UTF-8 CSV with the columns `Brand`, `TAC`, and `SPECS`. Search it directly or load it into any spreadsheet or database tool.
+
+### Excel
+
+Open `tac_full.xlsx` and search for a TAC number or device model in the `ALL` sheet. Use the `Common` and `Not_Common` sheets when you only need the curated subset.
 
 ---
 
 ## Coverage
 
-- ✅ **Total TAC entries:** 254,997
-- ✅ **Brands covered:** Xiaomi, Samsung, Apple, Huawei, More
-- ✅ **Release years:** 2000 – 2025
-- ✅ **Format:** XLSX (with per-brand sheets)
+- ✅ **Total TAC entries:** 255,484
+- ✅ **Brands covered:** 11,000+ (Xiaomi, Samsung, Apple, Huawei, and more)
+- ✅ **Release years:** 2000 – 2026
+- ✅ **Formats:** CSV and XLSX (`ALL`, `Common`, `Not_Common`)
+- ✅ **Latest update:** October 2026 — 482 new TACs, including iPhone 18 Pro / Pro Max, iPhone 17E, iPhone Duo, Google Pixel 11 series, Motorola Edge 70 series, Realme Note 80 / P4 series, and more
 
 ---
 
@@ -59,7 +71,8 @@ TAC data is sourced and cross-referenced from:
 
 - Public IMEI databases
 - [Osmocom TAC](http://tacdb.osmocom.org/)
-- [ Is this Phone Blocked?](https://isthisphoneblocked.net.au/)
+- [Is This Phone Blocked?](https://isthisphoneblocked.net.au/)
+- [Apple Support](https://support.apple.com/en-us/108044) and [GSMArena](https://www.gsmarena.com/) for model verification
 - Community contributions and corrections
 
 ---
