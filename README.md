@@ -57,11 +57,11 @@ Open `tac_full.xlsx` and search for a TAC number or device model in the `ALL` sh
 
 ## Coverage
 
-- ✅ **Total TAC entries:** 255,484
+- ✅ **Total TAC entries:** 259,035
 - ✅ **Brands covered:** 11,000+ (Xiaomi, Samsung, Apple, Huawei, and more)
 - ✅ **Release years:** 2000 – 2026
 - ✅ **Formats:** CSV and XLSX (`ALL`, `Common`, `Not_Common`)
-- ✅ **Latest update:** October 2026 — 482 new TACs, including iPhone 18 Pro / Pro Max, iPhone 17E, iPhone Duo, Google Pixel 11 series, Motorola Edge 70 series, Realme Note 80 / P4 series, and more
+- ✅ **Latest update:** October 2026 — 3,551 more TACs added across Apple, Realme, Vivo, Honor, Huawei, Motorola, ZTE, and more (4,033 new TACs this month)
 
 ---
 
