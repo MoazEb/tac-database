@@ -38,7 +38,7 @@ tac-database/
 | Field | Type | Description |
 |---|---|---|
 | `brand` | `string` | Device manufacturer / brand name (e.g. XIAOMI, SAMSUNG, APPLE, POCO) |
-| `tac` | `string` | 8-digit Type Allocation Code |
+| `tac` | `string` | Type Allocation Code (normally 8 digits; leading zeros are omitted for legacy allocations) |
 | `specs` | `string` | Full model name, internal model number, variant, and release year |
 
 ---
@@ -57,11 +57,11 @@ Open `tac_full.xlsx` and search for a TAC number or device model in the `ALL` sh
 
 ## Coverage
 
-- ✅ **Total TAC entries:** 259,035
+- ✅ **Total TAC entries:** 275,864
 - ✅ **Brands covered:** 11,000+ (Xiaomi, Samsung, Apple, Huawei, and more)
-- ✅ **Release years:** 2000 – 2026
+- ✅ **Release years:** 1990 – 2026
 - ✅ **Formats:** CSV and XLSX (`ALL`, `Common`, `Not_Common`)
-- ✅ **Latest update:** October 2026 — 3,551 more TACs added across Apple, Realme, Vivo, Honor, Huawei, Motorola, ZTE, and more (4,033 new TACs this month)
+- ✅ **Latest update:** October 2026 — 16,829 more TACs added, primarily from the Optus V36 public TAC list, covering Samsung, Apple, OPPO, Quectel, Itel, Infinix, Tecno, Nokia, and more (20,862 new TACs this month)
 
 ---
 
@@ -71,7 +71,7 @@ TAC data is sourced and cross-referenced from:
 
 - Public IMEI databases
 - [Osmocom TAC](http://tacdb.osmocom.org/)
-- [Is This Phone Blocked?](https://isthisphoneblocked.net.au/)
+- [Is This Phone Blocked?](https://isthisphoneblocked.net.au/) — Optus V36 public TAC list
 - [Apple Support](https://support.apple.com/en-us/108044) and [GSMArena](https://www.gsmarena.com/) for model verification
 - Community contributions and corrections
 
